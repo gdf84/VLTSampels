@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLTPlugin.Infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleVault", "ConsoleVault\ConsoleVault.csproj", "{81DD2BAD-C5C4-48D3-9F37-937E378443E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "WpfApp\WpfApp.csproj", "{3D3C382C-E702-479A-94E5-390D3C2E8F94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{FA875C85-1EC9-42CE-89B2-9744240AF670}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{81DD2BAD-C5C4-48D3-9F37-937E378443E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DD2BAD-C5C4-48D3-9F37-937E378443E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DD2BAD-C5C4-48D3-9F37-937E378443E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D3C382C-E702-479A-94E5-390D3C2E8F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3C382C-E702-479A-94E5-390D3C2E8F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3C382C-E702-479A-94E5-390D3C2E8F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3C382C-E702-479A-94E5-390D3C2E8F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA875C85-1EC9-42CE-89B2-9744240AF670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA875C85-1EC9-42CE-89B2-9744240AF670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA875C85-1EC9-42CE-89B2-9744240AF670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA875C85-1EC9-42CE-89B2-9744240AF670}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

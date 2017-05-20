@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        xmlns:convert="clr-namespace:WpfApp.Converters"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <convert:SimpleConverter x:Key="SimpleConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Column="0" Grid.Row="0" Text="{Binding Value1, UpdateSourceTrigger=PropertyChanged}" Width="100" Margin="5"/>
+        <TextBox Grid.Column="0" Grid.Row="1" Text="{Binding Value2, UpdateSourceTrigger=PropertyChanged}" Width="100" Margin="5"/>
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="{Binding Sum, Converter={StaticResource ResourceKey=SimpleConverter}}" Width="100" Margin="5"/>
+
+        <Button Grid.Column="0" Grid.Row="3" Margin="5" Height="30" Click="Button_Click">
+            <Button.Content>
+               кнопка       
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>

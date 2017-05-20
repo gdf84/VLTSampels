@@ -107,21 +107,23 @@ namespace VLTPlugin
             var WebMan = application.Connection.WebServiceManager;
             VaultManager.Initialize(WebMan);
 
-            WebMan.DocumentServiceExtensions.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
-            WebMan.DocumentService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
-            WebMan.FilestoreService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
-            WebMan.FilestoreVaultService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
+            //WebMan.DocumentServiceExtensions.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
+            //WebMan.DocumentService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
+            //WebMan.FilestoreService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
+            //WebMan.FilestoreVaultService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
 
             
-            WebMan.ItemService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
-            WebMan.PackageService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
+            //WebMan.ItemService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
+            //WebMan.PackageService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
 
-            
-            //Autodesk.DataManagement.Client.Framework.Vault.Forms.Interfaces
-            //VaultManager vm = new VaultManager(WebMan, application);
+            DocumentServiceExtensions.UpdateFileLifecycleStateEvents.Post +=
+                UpdateFileLifecycleStateEvents_Post;
         }
 
-       
+        private void UpdateFileLifecycleStateEvents_Post(object sender, UpdateFileLifeCycleStateCommandEventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
 
         private void DocumentServiceExtensions_PostInvokeEvents(object sender, WebServiceInvokeEventArgs e)
         {
