@@ -12,8 +12,8 @@ namespace VLTPlugin {
             System.Windows.Forms.MessageBox.Show("Hello world!!!");
         }
 
-        public static void SomeCommand(object sender, CommandItemEventArgs e) {            
-            System.Windows.Forms.MessageBox.Show("Hello world!!!");
+        public static void SomeCommand(object sender, CommandItemEventArgs e) {
+            Main.VaultManager.CreateFolderInRoot(Guid.NewGuid().ToString());
         }
     }
 }

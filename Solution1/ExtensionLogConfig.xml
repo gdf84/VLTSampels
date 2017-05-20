@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExtensionLoggerConfiguration>
+  <BaseFileName>C:\ProgramData\Autodesk\Vault 2017\Extensions\LOG_</BaseFileName>
+  <DateFormat>yyMMdd</DateFormat>
+  <KeepLogsFor>1</KeepLogsFor>
+  <FileExtension>.log</FileExtension>
+</ExtensionLoggerConfiguration>

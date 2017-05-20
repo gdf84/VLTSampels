@@ -1,16 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{A6A83DAD-7222-44C6-93E0-46BD19A5E32C}"
 	ProjectSection(SolutionItems) = preProject
+		ExtensionLogConfig.xml = ExtensionLogConfig.xml
 		VLTPlugin.vcet.config = VLTPlugin.vcet.config
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLTPlugin", "VLTPlugin\VLTPlugin.csproj", "{602FE631-E616-4374-8991-C8820BDA3C33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{BF32F51D-2D1B-4F90-A9B5-DB81BEFDB143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLTPlugin2018", "VLTPlugin2018\VLTPlugin2018.csproj", "{668483C2-5A65-4729-B1A9-58F9944A1938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLTPlugin.Infrastructure", "VLTPlugin.Interface\VLTPlugin.Infrastructure.csproj", "{809653CF-39B3-4B1C-9B9F-782482BC50D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleVault", "ConsoleVault\ConsoleVault.csproj", "{81DD2BAD-C5C4-48D3-9F37-937E378443E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +33,18 @@ Global
 		{BF32F51D-2D1B-4F90-A9B5-DB81BEFDB143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF32F51D-2D1B-4F90-A9B5-DB81BEFDB143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF32F51D-2D1B-4F90-A9B5-DB81BEFDB143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668483C2-5A65-4729-B1A9-58F9944A1938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668483C2-5A65-4729-B1A9-58F9944A1938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668483C2-5A65-4729-B1A9-58F9944A1938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668483C2-5A65-4729-B1A9-58F9944A1938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809653CF-39B3-4B1C-9B9F-782482BC50D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809653CF-39B3-4B1C-9B9F-782482BC50D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809653CF-39B3-4B1C-9B9F-782482BC50D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809653CF-39B3-4B1C-9B9F-782482BC50D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DD2BAD-C5C4-48D3-9F37-937E378443E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DD2BAD-C5C4-48D3-9F37-937E378443E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DD2BAD-C5C4-48D3-9F37-937E378443E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DD2BAD-C5C4-48D3-9F37-937E378443E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
