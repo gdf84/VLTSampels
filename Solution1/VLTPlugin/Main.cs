@@ -30,7 +30,7 @@ namespace VLTPlugin
                 Hint = "Подсказка",
                 Image = Images.Action
             };
-            ciHelloWorld.Execute += Commands.HelloWorld;
+            ciHelloWorld.Execute += Commands.AddEnt; //Commands.HelloWorld;
 
             CommandItem ciSomeCommand = new CommandItem("mainmenu.somecommand", "Some Command") {
                 MultiSelectEnabled = false,
@@ -104,8 +104,15 @@ namespace VLTPlugin
         public void OnLogOn(IApplication application) {
 
             var Connection = application.Connection;
+            
             var WebMan = application.Connection.WebServiceManager;
             VaultManager.Initialize(WebMan);
+
+            var user =  WebMan.AdminService
+                .GetUserByUserId(Connection.UserID);
+
+            var permissions = WebMan.AdminService
+                .GetPermissionsByUserId(Connection.UserID);
 
             //WebMan.DocumentServiceExtensions.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
             //WebMan.DocumentService.PostInvokeEvents += DocumentServiceExtensions_PostInvokeEvents;
